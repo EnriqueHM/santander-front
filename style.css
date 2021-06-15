@@ -13,9 +13,30 @@ button{
 }
 
 strong{
-    color:#8b8b8bcc;
+    color:#1206b9;
 }
 
 body{
-    background-color: #f3e1cf;
+    background-color: #aafdf9;
+    /*background-image: url('./fondo-ocean.jpg');*/
+
+}
+
+img{
+    margin-right: 10px;
+}
+
+.image{
+    margin: auto;
+    width: 30%;
+    /*border:  solid green;*/
+    padding: 10px;
+}
+
+.page_title{
+    text-align: center;
+}
+
+.btn-form{
+    padding-left:100px;
 }
