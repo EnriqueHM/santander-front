@@ -1,0 +1,21 @@
+h1{
+    color:rgb(11,111,201);
+    font-size: 30px;
+}
+
+h2{
+    color:#46484c;
+}
+
+button{
+    color:#fff;
+    background-color: #025157;
+}
+
+strong{
+    color:#8b8b8bcc;
+}
+
+body{
+    background-color: #f3e1cf;
+}
