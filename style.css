@@ -17,7 +17,7 @@ strong{
 }
 
 body{
-    background-color: #aafdf9;
+    background-color: #99d6d3;
     /*background-image: url('./fondo-ocean.jpg');*/
 
 }
@@ -69,17 +69,16 @@ li{
     width: 15%;
 }
 
+li{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
 .navbar{
     width: 70%;
     color: green;
     text-align: center;    
     color:#025157; 
-}
-
-.menu-item{
-    /*display: inline;*/
-    margin-right: 25px;
-    margin-left: 25px;
 }
 
 .actions{
