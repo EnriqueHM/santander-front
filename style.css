@@ -136,3 +136,89 @@ li{
     left: 0;
     right: 0;
 }
+
+.publish-form{
+    background-color: whitesmoke;
+}
+
+.in-publish{
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.btn-publish{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.publish-brands{
+    width: 1000px;
+    display: flex;
+    background-color: #96d178;
+
+}
+
+.publish-brands h1{
+
+    color: #025157;
+}
+
+.publish-general{
+    background-color:#96d178;
+}
+
+.users-of-matcha{
+    padding: 15px;
+    border-radius: 7px;
+    border: 0;
+}
+
+.publish-text{
+    padding: 30px;
+}
+
+.publish-text-p{
+    color:#4a4a4a;
+}
+
+.clients-image{
+    width: 400px;
+    padding: 0;
+}
+
+.publish-banner{
+    margin: 20px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    align-content: center;
+}
+
+.h3-banner{
+    color:green;
+}
+
+.faded-banner{
+    color: gray;
+}
+
+.banner-img{
+    padding: 0;
+    width: 200px;
+}
+
+.publish-banner > *{
+    padding: 15px;
+    align-content: center;
+}
+
+.banner-button{
+    padding:20px;
+    border-radius: 15px;
+    border:0;
+}
