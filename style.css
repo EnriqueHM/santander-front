@@ -221,3 +221,84 @@ li{
     border-radius: 10px;
     border:0;    
 }
+
+.features{
+    display: grid;
+    /*grid-template-columns: 100px 300px;*/
+    /*grid-template-columns:  repeat(2,300pxS); 
+    grid-template-columns: 500px 1fr;   divide el espacio equitativamanebte
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 660px;*/
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+}
+
+.feature-art{
+    background-color: lightcyan;
+    margin: 10px;
+    width: 40%;
+    height: 50px;
+}
+
+.general-grid{
+    background-color: #025157;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-row-gap: 50px;
+    padding: 50px 50px 50px 50px;  
+    
+}
+
+.feature-image{
+    width: 40%;
+    position:relative;
+    right: -50px;
+    
+}
+
+.feature-content{
+    padding: 0;
+    width: 300px;
+}
+
+.feature-image{
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    padding-right: 0;
+    border-radius: 10px;
+    padding-left: 30px;
+    width: 550px;
+    
+}
+
+
+.feature-card{
+    margin-top: 20px;
+    justify-content: first baseline;
+}
+.feature-img{
+    padding-left:50px;  
+    overflow: hidden; 
+    position: relative; 
+    height: 300px;
+}
+
+.logo-img{
+    padding: 10px;
+    size: 5px;
+    background-color: white;    
+}
+
+.promo-text{
+    color: gray;
+}
+
+.promo-link{
+    color:#67b54b;
+    font-weight: 600;
+}
+
+
+/* reto 4 y postwork 4 */
