@@ -175,7 +175,7 @@ li{
 .users-of-matcha{
     padding: 15px;
     border-radius: 7px;
-    border: 0;
+    border: 0;    
 }
 
 .publish-text{
@@ -214,12 +214,15 @@ li{
 
 .publish-banner > *{
     padding: 15px;
-    align-content: center;
+    width: 250px;
+    /*align-content: center;*/
 }
 
 .banner-button{
     border-radius: 10px;
-    border:0;    
+    border:0;   
+    margin: 20px;
+    justify-content:flex-end;
 }
 
 .features{
