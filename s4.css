@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    /*flex-direction: row;
+    flex-wrap:wrap;
+    flex-wrap:nowrap;*/
+    background-color: blue;
+}
+
+.container > .item{
+    background-color: gray;
+    width: 50%;
+    height: 50px;
+}
+
+.main{
+    display: flex;
+    width: 500px; /* Si no se pone este valor toma todo el ancho de la pagina */
+}
+
+.main div:nth-of-type(1){
+    flex-grow: 1;
+}
+
+.main div:nth-of-type(4){
+    flex-grow: 1;
+}
