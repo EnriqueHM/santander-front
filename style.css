@@ -303,5 +303,95 @@ li{
     font-weight: 600;
 }
 
+/* postwork 4 */
 
-/* reto 4 y postwork 4 */
+.steps-title{
+    /*justify-content: center;*/
+    align-items: center;
+}
+.steps{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color:#fffbf7;
+}
+
+.card-step{
+    border: 5px;
+    width: 200px;
+    background-color: white;
+    overflow:unset;
+}
+
+.card-step-image{
+    display: flex;
+    flex-direction: row;
+    position: relative;    
+    height: 550px;
+    box-sizing: border-box;
+    
+}
+
+
+.logo-image{
+    height: 25px;
+    margin-top: 25px;
+}
+.step-image{
+    width:550px;
+    overflow: hidden;
+    padding-right: 10px;
+    
+}
+
+
+
+.card-step-body{
+    font-size: 16px;
+    line-height: 1.4;
+    
+}
+.card-step-body a{
+    color: #67b54b;  
+    font-weight: 600;     
+}
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    body{
+        /*background-color: #99d6d3;*/
+        background-color: #cbeed1;
+        margin-top: 100px;
+        /*background-image: url('./fondo-ocean.jpg');*/
+    
+    }
+
+    .navbar, .actions{
+        display: none;
+    }
+
+    .page_title{
+        font-size: 30px;
+    }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
+}
+
+
