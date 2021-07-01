@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Matcha</title>
 </head>
 <body>
     <section class="fixed-header">
-        <header class="header">
+        <!-- <header class="header">
             <a class="logo" href="./index.html">
             <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Imagen matcha">
             </a>
@@ -29,30 +35,81 @@
                 <a>Sign In</a>
                 <button class="actions-button">Start free trial</button>
             </div>
-        </header>
+        </header> -->
+        
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+                    alt="Matcha"
+                  />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Platform</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <a>Sign In</a>
+                    <button>Start free trial</button>
+                  </form>
+                </div>
+              </nav>
+         
     </section>
     <!-- Esto es lo quer se vera en el navegador web -->
-    <div>
-        <h1 class="page_title">What is Lorem Ipsum?</h1>
-    </div>
-    
-    <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+    <main>
+        <div>
+            <h1 class="page_title">What is Lorem Ipsum?</h1>
+        </div>
+        
+        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
 
-    <h2>Where does it come from?</h2>
-    <h3>Contrary to popular belief, <strong> Lorem Ipsum is not simply random text</strong>. It has roots in a piece of classical Latin literature from 45 BC</h3>
+        <h2>Where does it come from?</h2>
+        <h3>Contrary to popular belief, <strong> Lorem Ipsum is not simply random text</strong>. It has roots in a piece of classical Latin literature from 45 BC</h3>
 
-    <h3>Why do we use it?</h3>
-    <h4>It is a long <strong> established fact that a reader will be distracted </strong>by the readable content of a page when looking at its layout.</h4>
+        <h3>Why do we use it?</h3>
+        <h4>It is a long <strong> established fact that a reader will be distracted </strong>by the readable content of a page when looking at its layout.</h4>
 
-    <h4>Where can I get some?</h4>
-    <h5><strong> There are many variations </strong> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h5>
+        <h4>Where can I get some?</h4>
+        <h5><strong> There are many variations </strong> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h5>
 
-    <h6>How you can see this is the origin of lorem ipsum</h6>
+        <h6>How you can see this is the origin of lorem ipsum</h6>
 
 
-    <p>
-    <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Proin laoreet sem in elit lobortis consectetur. <strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.
-    </p>
+        <p>
+            <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Proin laoreet sem in elit lobortis consectetur. <strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+
+        <figure class="image">
+            <img src='./capterra.png' alt="Imagen logotipo de Capterra">
+        </figure>
+    </main>
     <!--<input type="text"> <br>-->    
     <form action="">
         <input type="email">
@@ -60,55 +117,53 @@
     </form>
 
     <p> <strong> Challenge III Create a form to allow you input your general data </strong> </p>
-    <form action="">
-        <table>
-            <thead>
-                <th>Data</th>
-                <th>Value</th>
-            </thead>
-            <tr>
-                <td>Name:</td>
-                <td><input type="text" placeholder="Put your name here" required></td>                
-            </tr>
-            <tr>
-                <td>Last name:</td>
-                <td><input type="text" placeholder="Put you lastname here" required></td>
-            </tr>
-            <tr>
-                <td>Age:</td>
-                <td><input Type="number" placeholder="Put your age here" required> <br></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><input type="email" placeholder="put a valid email here" required> <br></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="password" placeholder="Write your password here" required><br></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td class="btn-form"><button type="submit">Submit &rarr;</button></td>
-            </tr>
-        </table>
-
-        <!--
-        <input type="text" placeholder="Nombre" required> <br>
-        <input type="text" placeholder="Apellido" required> <br>
-        <input Type="number" placeholder="Edad" required> <br>
-        <input type="email" placeholder="Correo" required> <br>
-        <input type="password" placeholder="Contraseña" required><br>
-        <button type="submit">Submit &rarr;</button>-->
-        <!--https://github.com/andres2093/santander-front
--->
-    </form>
+    <article class="publish">
+        <form action="">
+            <!--
+            <table>
+                <thead>
+                    <th>Data</th>
+                    <th>Value</th>
+                </thead>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" placeholder="Put your name here" required></td>                
+                </tr>
+                <tr>
+                    <td>Last name:</td>
+                    <td><input type="text" placeholder="Put you lastname here" required></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input Type="number" placeholder="Put your age here" required> <br></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="put a valid email here" required> <br></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Write your password here" required><br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="btn-form"><button type="submit">Submit &rarr;</button></td>
+                </tr>
+            </table>-->
+            
+            <input type="text" id="name" name="fname" placeholder="Nombre" required> 
+            <input type="text" id="lastName" name="lastName" placeholder="Apellido" required> 
+            <input Type="number" id="age" name="age" placeholder="Edad" required> 
+            <input type="email" id="email" name="email" placeholder="Correo" required> 
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Submit &rarr;</button>
+            <!--https://github.com/andres2093/santander-front-->
+        </form>
+    </article>
     <br>
-    <p><strong>Challenge IV Add one image to this page</strong></p>
-    <div class="image">
-        <img src='./capterra.png' alt="Imagen logotipo de Capterra">
-    </div>
+    <p><strong>Challenge IV Add one image to this page</strong></p>    
 
-    <section class="publish">
+    <section class="promo">
         <article class="explanatory-video">
             <video 
                 controls 
@@ -121,7 +176,7 @@
 
             <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="See how it works"/>
         </article>
-        <article class="promo">
+        <article class="promo_">
             <h3>Publish your blog in minutes, not hours.</h3>
             <p class="promo_p">
                 Your blog is your most powerful asset to build, engage, and retain a loyal
@@ -140,13 +195,39 @@
         </article>
     </section>
 
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./touille.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./fondo-ocean.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./capterra.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
     <section class="general-grid">
         <article class="feature-card">            
             <div class="feature-image">
                 <span>
                     <div class="feature-content">
-                        <figure class="sp">
-                            
+                        <figure class="sp">                            
                             <img class="logo-img" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_publish.png" alt="Publish icon">                    
                         </figure>                
                     </div>
@@ -250,8 +331,18 @@
 
 <section>
     <h2 class="steps-title">How does Matcha work?</h2>
-    <p class="steps-p">Your blog can be so much more than window dressing. Use Matcha’s simple formula to transform your blog into an ecommerce growth engine.</p>
-    <button class="btn">Explore the platform</button>
+    <div class="steps-paragraph">
+        <p class="steps-p">Your blog can be so much more than window dressing. Use Matcha’s 
+            <strong>
+                simple formula
+            </strong> 
+            to transform your blog into an ecommerce growth engine.</p>
+    </div>
+    <div class="steps-btn">
+        <div class="centered-btn">
+            <button class="btn">Explore the platform</button>
+        </div>        
+    </div>
 
     <div class="steps">
         <article class="card-step">
@@ -263,46 +354,43 @@
             <div class="card-step-body">
                 <h3>Publish</h3>
                 <p>Effortlessly fill your blog with content that shoppers want</p>
-                <a href="">Publish instantly</a>
+                <a href="">Publish instantly &rarr;</a>
             </div>
         </article>
 
         <article class="card-step">
             <div class="card-step-image">
-                <img class="logo-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_content.png" alt="Content icon" class="card-step-icon">
-                <img class="step-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-publish.png" alt="Publish" class="card-step-bg">
-                
+                <img class="logo-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_channels.png" alt="Channels icon" >
+                <img class="step-image"   src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-promote.png" alt="Promote" >                
             </div>
             <div class="card-step-body">
-                <h3>Publish</h3>
-                <p>Effortlessly fill your blog with content that shoppers want</p>
-                <a href="">Publish instantly</a>
+                <h3>Promote</h3>
+                <p>Use articles in email, social, and content ads to attract more site visitors.</p>
+                <a href="">Drive more site vositors &rarr;</a>
             </div>
         </article>
 
         <article class="card-step">
             <div class="card-step-image">
-                <img class="logo-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_content.png" alt="Content icon" class="card-step-icon">
-                <img class="step-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-publish.png" alt="Publish" class="card-step-bg">
-                
+                <img class="logo-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_funnel.png" alt="Funnel icon" class="card-step-icon">
+                <img class="step-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-capture.png" alt="Capture" class="card-step-bg">                
             </div>
             <div class="card-step-body">
-                <h3>Publish</h3>
-                <p>Effortlessly fill your blog with content that shoppers want</p>
-                <a href="">Publish instantly</a>
+                <h3>Capture</h3>
+                <p>Turn readers into email subscribers and subscribers into customers.</p>
+                <a href="">Grow your email list &rarr;</a>
             </div>
         </article>
 
         <article class="card-step">
             <div class="card-step-image">
-                <img class="logo-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_content.png" alt="Content icon" class="card-step-icon">
-                <img class="step-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-publish.png" alt="Publish" class="card-step-bg">
-                
+                <img class="logo-image" src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_chart.png" alt="Chart icon">
+                <img class="step-image"  src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-measure.png" alt="Measure"> 
             </div>
             <div class="card-step-body">
-                <h3>Publish</h3>
-                <p>Effortlessly fill your blog with content that shoppers want</p>
-                <a href="">Publish instantly</a>
+                <h3>Measure</h3>
+                <p>See what’s working and what’s not to easily optimize for more traffic, email subscribers, and sales.</p>
+                <a href="">Track performance &rarr;</a>
             </div>
         </article>
     </div>
@@ -314,7 +402,22 @@
     <article class="feature-art">Caracteristica 3</article>
     <article class="feature-art">Caracteristica 4</article>
 </section>
-    
+<script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+
 </body>
 </html>
 

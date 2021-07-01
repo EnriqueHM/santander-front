@@ -16,13 +16,6 @@ strong{
     color:#1206b9;
 }
 
-body{
-    /*background-color: #99d6d3;*/
-    background-color: #fffbf7;
-    margin-top: 100px;
-    /*background-image: url('./fondo-ocean.jpg');*/
-
-}
 
 img{
     margin-right: 10px;
@@ -30,12 +23,13 @@ img{
 
 .image{
     margin: auto;
-    width: 30%;
+    width: 100%;
     /*border:  solid green;*/
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .page_title{
+    margin-top: 250px;
     text-align: center;
 }
 
@@ -77,7 +71,7 @@ li{
 }
 
 .navbar{
-    width: 70%;
+    /*width: 70%;*/
     color: green;
     text-align: center;    
     color:#025157; 
@@ -103,12 +97,21 @@ li{
 }
 
 .promo{
+    display: flex;
+    flex-direction: row;    
     color: #025157;
     padding: 15px;
+    padding-left: 10px ;
 }
 
-.promo_p{
+.promo_ >*{
+    padding-left: 10px;
+    width: 30%;
+}
+
+.promo_p {    
     color: black;
+    
 }
 
 .publish{
@@ -138,7 +141,7 @@ li{
 }
 
 .publish-form{
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
 }
 
 .in-publish{
@@ -225,6 +228,20 @@ li{
     justify-content:flex-end;
 }
 
+body{    
+    background-color: #fffbf7;
+    margin-top: 100px;
+    /*background-image: url('./fondo-ocean.jpg');*/
+    /*max-width: 1200px;*/
+    width: 100%;
+
+}
+
+main{
+    width: 100%;
+}
+
+
 .features{
     display: grid;
     /*grid-template-columns: 100px 300px;*/
@@ -305,9 +322,14 @@ li{
 
 /* postwork 4 */
 
-.steps-title{
-    /*justify-content: center;*/
-    align-items: center;
+.steps-title{  
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+    text-align: center;
 }
 .steps{
     display: grid;
@@ -315,11 +337,49 @@ li{
     background-color:#fffbf7;
 }
 
+.steps-paragraph{    
+    margin: 0 450px 16px 450px;
+}
+
+.steps-p{      
+    text-align: center;
+    color:#46484c;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;   
+    
+    
+}
+
+.steps-p > *{
+    color: #67b54b;
+}
+
 .card-step{
     border: 5px;
     width: 200px;
     background-color: white;
     overflow:unset;
+}
+
+.steps-btn{
+    max-width: 100%;
+    position: relative;    
+}
+
+.centered-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    justify-content: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .card-step-image{
@@ -336,14 +396,13 @@ li{
     height: 25px;
     margin-top: 25px;
 }
+
 .step-image{
     width:550px;
     overflow: hidden;
     padding-right: 10px;
     
 }
-
-
 
 .card-step-body{
     font-size: 16px;
@@ -355,22 +414,106 @@ li{
     font-weight: 600;     
 }
 
+.card-step-body > h3{
+    font-size: 30px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 400px;
+    text-align: center;
+}
+
+.carousel{
+    max-width: 50%;
+}
+
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
     body{
-        /*background-color: #99d6d3;*/
         background-color: #cbeed1;
-        margin-top: 100px;
-        /*background-image: url('./fondo-ocean.jpg');*/
-    
+        margin-top: 100px;  
+        /*max-width: 575px; */
+        width: 100%;
     }
+
+    .publish > img{
+        width: 100%;
+    }
+
+    .publish > form{
+        flex-direction: column;
+    }
+
+    .publish > form > input {
+        width: 85%;
+      }
+    
 
     .navbar, .actions{
         display: none;
     }
 
     .page_title{
+        margin-top: 0;
         font-size: 30px;
+        justify-content: center;
+    }
+
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .explanatory-video{
+        width: 100%;
+    }
+
+    .promo_ >*{
+        padding-left: 10px;
+        width: 90%;
+    }
+
+    .publish{
+        margin-top: 10px;
+    }
+
+    .steps-title{
+        font-size: 30px;
+    }
+
+    .steps-paragraph{    
+        margin: 0 50px 16px 50px;
+    }
+
+    .steps{
+        display: flex;
+        flex-direction: column;
+        background-color:#fffbf7;
+    }
+
+    .promo_ > h3{
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .general-grid{
+        /*
+        display: flex;
+        flex-direction: column;*/
+        grid-template: repeat(4, 1fr) / 1fr
+    }
+
+    .feature-image{
+        padding-left: 20px;
+        width: 400px;        
+    }
+
+    .feature-img{
+        padding-left:5px;  
+    }    
+    
+    .feature-card{
+        margin-top: 20px;
+        justify-content: first baseline;
     }
 }
 
