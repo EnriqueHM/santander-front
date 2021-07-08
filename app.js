@@ -13,6 +13,7 @@ function sendEmail(params){
     console.log(email);
     getTemplate()
     .then((response) => {
+        sendEmailToApi(email,template)
         console.log(response);
     })
     .catch((error) => {
